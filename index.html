@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.jpg" type="image/jpg">
+    <script src="https://kit.fontawesome.com/669432ca5e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container" >
+            <nav>
+                <img src="logo.jpeg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Social-media">Social-media</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Full Stack Web Developer</p>
+                <h1 class="head">Hii, I'm <span>Abhay Rana</span><br>from India</h1>
+             </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img.jpeg">
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('Educational Achievements')">Educational Achievements</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+
+                            <li><span>Programmer</span><br>Basic knowledge of C,C++,Java and DSA using C++ </li>
+                            <li><span>Web Development</span><br>Frontend Development (HTML,CSS,JS and React JS)<br>
+                                Backend Development (not started yet)</li>
+                            <li><span>Data Analysis</span><br>Proficiency in SQL and Python</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Projects">
+                        <ul>
+
+                            <li><span>2022</span><br>Research paper on Virtual Voice Assistant using
+                                Python,ML<br>Research paper on Predictive maintenance using ML,DL</li>
+                            <li><span>2023</span><br>Product and Research Paper on Virtual Mouse</li>
+                            <li><span>2024</span><br>Product and Research Paper on Online Learning Platform for CSE
+                                Students</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Educational Achievements">
+                        <ul>
+
+                            <li><span>2019</span><br>Matriculation (95.2%)</li>
+                            <li><span>2021</span><br>Class 10+2/Intermediate (91.8%)</li>
+                            <li><span>2021-2025</span><br>Amongst NPTEL Toppers in Probability and
+                                Statistics,Introduction to IOT </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Social-media">
+        <div class="container">
+            <h1 class="sub-title">Social-media</h1>
+            <div class="Social-media-list">
+                <div>
+
+
+                    <a href="https://www.instagram.com/abr_204/" target="main"><b>
+                            <h2><i class="fa-brands fa-instagram"></i></h2>
+                        </b></a>
+
+                </div>
+                <div>
+
+                    <a href="https://www.facebook.com/profile.php?id=100041270616587" target="main"><b>
+                            <h2><i class="fa-brands fa-facebook"></i></h2>
+                        </b></a>
+                </div>
+                <div>
+
+                    <a href="https://github.com/Abr-204" target="main"><b>
+                            <h2><i class="fa-brands fa-github"></i></h2>
+                        </b></a>
+                </div>
+                <div>
+
+                    <a href="https://www.linkedin.com/in/abhay-rana-0a25a6227/" target="main"><b>
+                            <h2><i class="fa-brands fa-linkedin"></i></h2>
+                        </b></a>
+                </div>
+                <div>
+                    <a href="https://twitter.com/Abrana204" target="main"><b>
+                            <h2><i class="fa-brands fa-square-x-twitter"></i></h2>
+                        </b></a>
+                </div>
+                <div>
+
+                    <a href="https://www.youtube.com/channel/UCykTJLEoC3ZEIHAjDZmWiMA" target="main"><b>
+                            <h2><i class="fa-brands fa-youtube"></i></h2>
+                        </b></a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="amazon-clone.jpg">
+                    <div class="layer">
+                        <h3>Amazon Clone App</h3>
+                        <a href="Project/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="js-clock.jpg">
+                    <div class="layer">
+                        <h3>Java Script Clock</h3>
+                        <a href="project.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="contact-row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h2>
+                        <p><i class="fa-solid fa-paper-plane"></i>ranaabhay649@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>8580421633</p>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/abr_204/" target="main"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100041270616587" target="main"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a href="https://github.com/Abr-204" target="main"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/abhay-rana-0a25a6227/" target="main">
+                                <i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://twitter.com/Abrana204" target="main"><i
+                                    class="fa-brands fa-square-x-twitter"></i></a>
+                            <a href="https://www.youtube.com/channel/UCykTJLEoC3ZEIHAjDZmWiMA" target="main">
+                                <i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                        <a href="Resume (2).pdf" download target="main" class="msg">Resume</a>
+
+                </div>
+                <div class="contact-right">
+                    <form name='submit-to-google-sheet'>
+                        <input type="text" name="Name"placeholder="Enter your Name" required>
+                        <input type="text" name="Email" placeholder="Enter your Email" required>
+                        <input type="text" name="Contact" placeholder="Enter your Contact" required>
+                        <textarea name="message" rows="6" placeholder="Enter your Message" required></textarea>
+                        <button type="message" class="msg">Send message</button>
+                       
+
+                    </form>
+                    <span id="message">
+                        Hii
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-links");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }    
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzl7671g6C2GGfVLyBBAXeltKjMSh4xzLLkZfO8dD_dFaEnz4CGQ-m7wzHckBqrKJX8Uw/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const message=document.getElementById("message")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                message.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    message.innerHTML=""
+                },5000
+                )
+                
+               form.reset()
+            })
+  .catch(error => console.error('Error!', error.message))
+        })
+</script>
+            
+            
+
+
+</body>
+
+</html>
